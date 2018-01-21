@@ -1,0 +1,28 @@
+﻿<!--<div class="col-md-2 col-md-offset-10">
+  <button name="newbabble">New Babble</button>
+</div>
+
+
+<div class="col-md-8 col-md-offset-2">
+
+  <div id="babbler" class="col-md-4" style="background-color: black">a</div>
+  <div id="babblerId" class="col-md-10 col-md-offset-1" style="background-color: black">a</div>
+  <div id="babbleInfor" class="col-md-4 col-md-offset-8" style="background-color: black">a</div>
+
+</div>-->
+
+
+
+
+<div class="col-md-6 col-md-offset-3">
+    <h1>Hi {{currentUser.firstName}}!</h1>
+    <p>You're logged in with Angular 2!!</p>
+    <h3>All registered users:</h3>
+    <ul>
+        <li *ngFor="let user of users">
+            {{user.username}} ({{user.firstName}} {{user.lastName}})
+            - <a (click)="deleteUser(user.id)">Delete</a>
+        </li>
+    </ul>
+    <p><a [routerLink]="['/login']">Logout</a></p>
+</div>
